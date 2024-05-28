@@ -18,16 +18,21 @@
             border: 1px solid black;
             padding: 10px;
         }
+        
+        tbody > tr:nth-child(2n) {
+            background-color: lightblue;
+            /* Efeito zebrado nas linhas - :nth-child = pseudo classe dos itens filhos da tr e (2n)= colorir de duas em duas linhas. Podemos aumentar o número de linahs a serem "puladas alterando o número dois por qualquer outro. No lugar de 2n, podemos usar odd, onde as linhas ímpares serão coloridas e even para as linhas pares. */
+        }
 
         caption {
             font-size: 1em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgreen;
+            background-color: lightblue;
         }
 
         thead {
-            background-color: green;
+            background-color: blue;
             color: white;
 
         }
@@ -58,7 +63,7 @@
             <thead>
                 <tr>
                     <th scope="col" style="width: 50px;">Posição</th>
-                    <th scope="col" style="width: 100px;">Estado</th>
+                    <th scope="col" style="width: 150px;">Estado</th>
                     <th style="width: 130px;">População (censo de 2022)[2]</th>
                     <th style="width: 130px;">População (censo de 2010)[3]</th>
                     <th style="width: 100px;">Mudança</th>
@@ -314,7 +319,7 @@
             <tfoot>
                 <tr>
                     <th scope="row">Total de Habitantes</th>
-                    <td scope="row"><strong>203 062 512</strong></td>
+                    <td class="num" scope="row"><strong>203 062 512</strong></td>
                 </tr>
             </tfoot>
         </table>
