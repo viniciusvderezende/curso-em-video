@@ -12,6 +12,7 @@
         table {
             width: 900px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -31,14 +32,26 @@
             background-color: lightblue;
         }
 
-        thead {
-            background-color: blue;
-            color: white;
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(14, 110, 142);
+            /* Criação de cabeçalho fixo na tela. Lembrar de configurar a tabela como position: relative; */
 
+        }
+
+        thead {
+            background-color: rgb(14, 110, 142);
+            color: white;
         }
 
         td.num {
             text-align: right;
+        }
+
+        tfoot {
+            background-color: rgb(14, 110, 142);
+            color: white;
         }
     </style>
 </head>
@@ -68,7 +81,7 @@
                     <th style="width: 130px;">População (censo de 2010)[3]</th>
                     <th style="width: 100px;">Mudança</th>
                     <th style="width: 100px;">% da pop. total</th>
-                    <th style="width: 200px;">País comparável (habitantes)</th>
+                    <th style="width: 220px;">País comparável (habitantes)</th>
                 </tr>
             </thead>
             <tbody>
