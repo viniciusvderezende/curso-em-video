@@ -10,13 +10,20 @@
         }
         
         table {
-            width: auto;
+            width: 900px;
             border-collapse: collapse;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgreen;
         }
 
         thead {
@@ -34,8 +41,10 @@
     <h1>Uso de tabelas com maior quantidade de dados</h1>
 
     <!-- 
-        ANATOMIA PARA TABELAS GRANDES 
+        ANATOMIA PARA TABELAS GRANDES
+        
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -45,15 +54,16 @@
     -->
 
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Posição</th>
-                    <th>Estado</th>
-                    <th>População (censo de 2022)[2]</th>
-                    <th>População (censo de 2010) [3]</th>
-                    <th>Mudança</th>
-                    <th>% da pop. total</th>
-                    <th>País comparável (habitantes)</th>
+                    <th scope="col" style="width: 50px;">Posição</th>
+                    <th scope="col" style="width: 100px;">Estado</th>
+                    <th style="width: 130px;">População (censo de 2022)[2]</th>
+                    <th style="width: 130px;">População (censo de 2010)[3]</th>
+                    <th style="width: 100px;">Mudança</th>
+                    <th style="width: 100px;">% da pop. total</th>
+                    <th style="width: 200px;">País comparável (habitantes)</th>
                 </tr>
             </thead>
             <tbody>
@@ -303,8 +313,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
-                    <td><strong>203 062 512</strong></td>
+                    <th scope="row">Total de Habitantes</th>
+                    <td scope="row"><strong>203 062 512</strong></td>
                 </tr>
             </tfoot>
         </table>
