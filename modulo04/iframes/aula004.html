@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <!-- Exibindo conteúdos dentro de iframes na mesma página à partir de links. -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus voluptate at, ad quos delectus suscipit soluta quisquam cupiditate itaque tempora maiores ipsam architecto quia ex voluptatem perferendis sed aliquam?</p>
+    <!-- Criação dos links - no target, inserimos o conteúdo de name="" do iframe. -->
+    <ul>
+        <li><a href="../paginas-extras/aula04.html" target="frame">Primeira Página</a></li>
+        <li><a href="../paginas-extras/aula05.html" target="frame">Segunda Página</a></li>
+        <li><a href="../paginas-extras/aula06.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Magni eos molestias illum sit pariatur natus dignissimos quae facere mollitia at repudiandae impedit consectetur, aliquam necessitatibus. Maxime aspernatur cum libero reiciendis quam placeat, et accusantium. Aperiam aliquam veniam quo?</p>
+    <iframe id="tela" name="frame" src="" frameborder="1">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro commodi sunt, numquam eligendi temporibus amet nisi eaque delectus officiis enim repellendus minima assumenda eius? Maiores asperiores optio dolor voluptate? Excepturi vel beatae earum error aspernatur, fuga rem cumque mollitia sint laboriosam sit, eos repellat quibusdam doloremque voluptas id quo doloribus unde eum illo nesciunt provident praesentium esse! Dolorem, vitae!</p>
+    <p>Libero ab autem itaque in tempora cumque hic, deserunt, eveniet praesentium unde sed! Molestiae reiciendis inventore a qui animi? Quae magni fuga minima molestiae? Enim facere sequi quos ipsa repellendus!</p>
+</body>
+</html>
