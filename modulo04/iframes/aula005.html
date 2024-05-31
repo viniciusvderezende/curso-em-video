@@ -6,7 +6,22 @@
     <title>Navegação com Iframes</title>
 </head>
 <body>
-    <h1>Navegação com Iframes</h1>
+    <h1>Segurança com Iframes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam mollitia at repellendus nihil cumque, deleniti error totam consequuntur. Odit dicta dolor eos, doloribus a harum nobis. Debitis ad quaerat recusandae.</p>
+    <iframe src="../paginas-extras/pag004.html" frameborder="1" sandbox="sandbox">
+        Seu navegador não é compatível com isso.
+    </iframe>
+    <!-- 
+        
+    O atributo sandbox="sandbox" impede ações maliciosas de outros sites, ou seja, a coleta de informações de formulários (como no exemplo), pois a propriedade sandbox receberá ela mesma, ou seja, não está capturanod informações.
+    Juntamente com o atributo referrerpolicy="no-referrer" (politica de referência), tornaremos o site mais seguro, pois com o referreroilicy estamos informando aos mecanismos de buscas que o conteúdo dessse iframe não coletará dados do usuário.
+    Outras configurações de sandbox: 
     
+     - sandbox="alow-same-origin" - permite conteúdo da mesma origem, ou seja, da mesma página.
+     - sandbox="alow-same-origin allow-forms" - permitir formulários.
+     - sandbox="alow-same-origin allow-forms allow-scripts" - permitir formulários e scripts.
+
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab nemo quaerat sunt, itaque quisquam debitis ipsam. Perspiciatis incidunt labore omnis officiis fuga ad corporis cupiditate laboriosam sint! Ea, explicabo.</p>
 </body>
 </html>
