@@ -104,10 +104,50 @@
             -->
         </p>
         <hr>
+        <h3>Output</h3>
 
-        
+        <h4>Soma</h4>
 
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="	n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
 
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="	n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- 
+                Comando oninput significa que, se tivermos entrada no input, faremos uma ação, que nesse caso, é a soma dos números dos inputs. Tudo o que está após o = do atributo oninput é código JavaScript. 
+            -->
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+            <!-- 
+                A Tag output não é utilizada para enviar dados para o script, más para receber e exibir informações na tela.
+            -->
+        </p>
+        <h4>Output com range</h4>
+        <p>
+            <label for="inumero">Número: </label>
+            <input type="range" name="numero" id="inumero" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inumero.value)">
+            <output id="ival">5</output>
+            <!-- Temos, nesse formulário, 3 maneiras de utilizar o output. -->
+        </p>
+
+        <h4>Output com tratamento de datas e funções</h4>
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
+            <!--
+                Para a saída da idade, inserimos no oninput uma função que foi criada em JavaScript fora da tag form.
+            -->
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
@@ -115,6 +155,13 @@
         </p>
 
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 
 </body>
 </html>
