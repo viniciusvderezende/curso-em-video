@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="15" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="10" placeholder="Senha" autocomplete="current-password">
+            <!-- 
+                O atributo required deve ser inserido nos inputs para definir obrigatoriedade dos dados solicitados para que os dados do formulário sejam enviados.
+                Minlength e maxlength definem o número mínimo e máximo de caracteres para cada campo respectivamente.
+                Size determina o tamanho da caixa de texto.
+                Placeholder mostra legenda dentro da caixa de texto.
+                Autocomplete, quando utilizado na tag form, liga ou desliga as sugestões que aparecem nos campos quando já foram usados. Quando utilizado dentro da tag input, informamos para o navegador do que se trata aquele campo e ele exibe ao usuário. Dessa forma, o navegador vai sugerir ao usuário os dados corretos relacionados ao campo em questão.
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
