@@ -103,4 +103,14 @@ São as características das diversas mídias ou telas onde o conteúdo será ex
     "Um media feature é a largura da janela do documento, normalmente usado para atribuir uma condição que vai testar se o que foi definido é verdadeiro ou falso, ou seja, são elementos do CSS atribuídos a estrutura do media para exibir quando a estilização sofrerá modificação".
 </quote>
 
-Fonte: <a href="https://www.treinaweb.com.br/blog/media-queries-o-que-sao-e-como-usar-no-css#:~:text=Um%20media%20feature%20%C3%A9%20a,quando%20a%20estiliza%C3%A7%C3%A3o%20sofrer%C3%A1%20modifica%C3%A7%C3%A3o." target="_blank">Treinaweb.</a>
+Fonte: <a href="https://www.treinaweb.com.br/blog/media-queries-o-que-sao-e-como-usar-no-css#:~:text=Um%20media%20feature%20%C3%A9%20a,quando%20a%20estiliza%C3%A7%C3%A3o%20sofrer%C3%A1%20modifica%C3%A7%C3%A3o." target="_blank">Treinaweb.</a>  
+
+As media features são inseridas ao final do link das CSS's no deader do HTML, porém, são diferentes das media types, pois são declaradas entre parênteses como no modelo abaixo:  
+
+<code>
+    link rel="stylesheet" href="estilos/style.css" media="all"
+    link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)"
+    link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)"
+</code>
+
+Nesse caso, determinamos a media feature de orientação de tela para exibição do conteúdo **(landscape = paisagem e portrait = retrato)**.
