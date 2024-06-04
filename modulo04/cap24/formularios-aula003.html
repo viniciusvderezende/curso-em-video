@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Teste de Formulários</h1>
+    <h2>Média de Provas</h2>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome: </label>
@@ -43,10 +44,88 @@
                 Os inputs do tipo time selecionam exclusivamente um horário.
             -->
         </p>
+
+        <h2>Cadastro de contatos com agrupamento de campos</h2>
+        <!--
+            A tag fieldset agrupa os camppos e gera uma borda denotando o pertencimento de cada item.
+            Legend trás os tipos de dados aos quais o grupo se refere. Deve ser inserida dentro de fieldset.
+        -->
+
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+            <p>
+                <label for="inome2">Nome: </label>
+                <input type="text" name="nome2" id="inome2" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" minlength="5" maxlength="30" autocomplete="email" placeholder="Ex.: nome@gmail.com.br">
+            </p>
+            <p>
+                <label for="iddd">DDD</label>
+                <input type="number" name="ddd" id="iddd" min="1" max="2" required placeholder="Ex.:11">
+                <label for="itel">Telefone 1: </label>
+                <input type="tel" name="tel" id="itel" required minlength="9" maxlength="9" autocomplete="tel" placeholder="Ex.: xxxx-xxxx" pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <label for="itel">Telefone 2: </label>
+                <input type="tel" name="tel" id="itel" required minlength="13" maxlength="13" autocomplete="tel" placeholder="Ex.: (xx)xxxx-xxxx" pattern="^\(\d{2}\)[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <label for="idddc">DDD</label>
+                <input type="number" name="ddd" id="idddc" min="1" max="2" required placeholder="Ex.:11">
+                <label for="icel">Celular: </label>
+                <input type="tel" name="cel" id="icel" required autocomplete="mobile" placeholder="Ex.: xxxxx-xxxx" pattern="^[0-9]{5}-[0-9]{4}$" minlength="9" maxlength="10">
+            </p>
+        </fieldset>
+        <!--
+            O atributo pattern define, por expressão regular (RegEx) o padrão numérico dos campos de telefone. Inseri um campo separado para DDD, más também pode ser definido por meio de RegEx como no exemplo do telefone 2.
+        -->
+        
+
+        <p>
+            <h2>Check Box e Rádio</h2>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="sxmas" value="M" checked>
+                <label for="sxmas"> Masculino</label><br>
+                <input type="radio" name="sexo" id="sxfem" value="F">
+                <label for="sxfem"> Feminino</label>
+                <!--
+                    Para criação de radios funcionais, devemos sempre informar o mesmo name para todas as radios e id's diferentes para que sua label seja atribuída corretamente.
+                    Se quiser manter uma das opções marcadas logo que a página é aberta, inserimos em uma das opões o atributo checked na tag input. Não podemos fazer isso para mais de uma opção.
+                    Devemos também, informar o atributo value="" para que os dados sejam enviados corretamente para o script.
+                -->
+            </fieldset>
+            <fieldset>            
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="esfut" id="iesfut">                
+                <label for="iesfut">Futebol</label><br>
+
+                <input type="checkbox" name="esvol" id="iesvol">
+                <label for="iesvol">Voleibol</label><br>
+
+                <input type="checkbox" name="esbas" id="iesbas" checked> 
+                <label for="iesbas">Basquetebol</label><br>
+
+                <input type="checkbox" name="eshan" id="ieshan"> 
+                <label for="ieshan">Handbol</label><br>
+
+                <input type="checkbox" name="esquei" id="iesquei" checked> 
+                <label for="iesquei">Queimada</label>
+                
+            </fieldset>
+            <!--
+                    Para criação de checkbox funcionais, devemos sempre informar names diferentes para todas as checkboxes e id's diferentes para que sua label seja atribuída corretamente.
+                    Se quiser manter qualquer uma das opções marcadas logo que a página é aberta, inserimos em uma das opões o atributo checked na tag input. Funciona também para mais de uma opção.
+                -->
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+        
     </form>
 </body>
 </html>
