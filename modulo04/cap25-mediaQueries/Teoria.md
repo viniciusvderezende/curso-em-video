@@ -114,3 +114,16 @@ As media features são inseridas ao final do link das CSS's no deader do HTML, p
 </code>
 
 Nesse caso, determinamos a media feature de orientação de tela para exibição do conteúdo **(landscape = paisagem e portrait = retrato)**.
+
+# Mobile First
+
+É um método de desenvolvimento priorizando dispositivos móveis e, posteriormente, adaptamos para as telas grandes.  
+Isso é útil pois, quando construimos um site para desktops, temos bastante espaço para inserir coisas, e assim o fazemos. Porém, ao configuramos as medias queries para dispositivos móveis, precisamos readaptar todo o layout, retirando diversas coisas do projeto inicial.  
+
+Ao priorizarmos os dispositivos móveis, ganhamos em:
+- Produtividade: conseguimos um design mais atraente para smartphones, por exemplo, uma vez que a maioria das pessoas atualmente utilizam esses dispositivos para acesso à internet e aplicativos.
+- Segundo o próprio criador do método, que atualmente trabalha na Google, os sites que priorizam a arquitetura mobile first, tem melhores colocações no rankeamento de busca, além de melhorar a experiência do usuário.  
+- Aumento de credibilidade na marca: mostra para o cliente que a empresa pensa em todo tipo de conexão ao criar seus sites, visando alcançar o maior número possível de pessoas.
+- Performance: Sites para celulares precisam ser bem leves para não prejudicar a experiência do cliente.
+
+Feito o design mobile first, teremos mais liberdade para inserir novas features e complementar a página para dispositivos maiores.
