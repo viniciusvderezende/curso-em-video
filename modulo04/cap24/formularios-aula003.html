@@ -121,6 +121,35 @@
                     Se quiser manter qualquer uma das opções marcadas logo que a página é aberta, inserimos em uma das opões o atributo checked na tag input. Funciona também para mais de uma opção.
                 -->
         </p>
+
+        <h2>Color, range e file</h2>
+
+        <h3>Color</h3>
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!-- Cores em exadecimal. -->
+        </p>
+
+        <h3>Range</h3>
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="range" id="irange" min="1" max="5" value="2">
+            <!-- O padrão do input range é de 0 a 100. Se quisermos modificar esse range, podemos estipular quantidades mínimas e máximas desse range. 
+            Value define onde a posição inicial do range estará por padrão.
+            Os controles de cores são apresentados de formas diferentes em função dos navegadores.
+            -->
+        </p>
+
+        <h3>File</h3>
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+            <!-- 
+                Ao utilizar o controle de envio de arquivos, não podemos utilizar o método GET, devemos usar o método POST para que ele seja processado pelo script.
+                Isso é válido para todos os elementos que recebam mais de 3KB de dados, sejam textos ou imagens.
+            -->
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
