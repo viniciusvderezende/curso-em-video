@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" value="5" placeholder="0 a 10">
+            <!-- 
+                Em campos numéricos, os atributos minwidth e maxwidth não funcionam. Nesse caso, utilizaremos os atributos min e max, que serão os números permitidos nesse campo.
+                Step define de quantos em quantos décimos os números serão aceitos.
+                Value é o valor que já aparecerá no campo como sugestão.
+            -->
+        </p>
+        <p>
+            <label for="imes">Período Letivo: </label>
+            <input type="month" name="mes" id="imes" value="1989-01">
+            <!--
+                Nos campos de datas, podemos determinar a data para exibição comom sugestão nos campos destinados a tal com o atributo value="". Porém, para isso, podemos usar um script do JavaScript para coletar a data atual e inserir nesse campo para que isso seja automatizado. Nesse caso, usamos apenas mês e ano com o type month.
+            -->
+        </p>
+        <p>
+            <label for="idata">Dia: </label>
+            <input type="date" name="data" id="idata" value="1989-01-17">
+            <!--
+                Aqui, utilizaremos a data completa. Podemos utilizar o type datetime para inserir horário da coleta de dados.
+                O atributo value também pode ser utilizado para sugestão com script JavaScrip para automatização.
+            -->
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova: </label>
+            <input type="time" name="hora" id="ihora">
+            <!--
+                Os inputs do tipo time selecionam exclusivamente um horário.
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
