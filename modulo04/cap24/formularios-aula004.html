@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controles de Formulários sem Input</h1>    
+    <h2>Select, datalist, textarea e output</h2>
+    <hr>
+    <h3>Select</h3>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estados: </label>
+            <select name="estados" id="iest">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>            
+                <option value="MA">Maranhão</option>            
+                <option value="MT">Mato Grosso</option>            
+                <option value="MS">Mato Grosso do Sul</option>            
+                <option value="MG">Minas Gerais</option>            
+                <option value="PA">Pará</option>            
+                <option value="PB">Paraíba</option>            
+                <option value="PR">Paraná</option>            
+                <option value="PE">Pernambuco</option>            
+                <option value="PI">Piauí</option>            
+                <option value="RJ">Rio de Janeiro</option>            
+                <option value="RN">Rio Grande do Norte</option>            
+                <option value="RS">Rio Grande do Sul</option>            
+                <option value="RO">Rondônia</option>            
+                <option value="RR">Roraima</option>            
+                <option value="SC">Santa Catarina</option>            
+                <option value="SP" selected>São Paulo</option>            
+                <option value="SE">Sergipe</option>            
+                <option value="TO">Tocantins</option>
+            </select>            
+        </p>
+
+        <h3>Selecão por grupos</h3>
+        <p>
+            <label for="iestr">Estados por Região: </label>
+            <select name="estados-regiao" id="iestr">
+                           
+                <optgroup label="Região Sudeste">
+                    <option value="">--- Escolha ---</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup> 
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>            
+                <!--
+                    A tag optgroup agrupa as opções da seleção e o atributo label de dentro da tag optgroup, gera a leganda do agrupamento.
+                    Podemos determinar qual opção será exibida por padrão nas seleções. Basta adicionar na tag option de abertura, o atributo selected.
+                    Se não quisermos exibir nenhum estado específico, podemos criar um option vazio com a descrição --- Escolha --- para ser exibido na lista, como no exemplo de Estados por Região.
+                    Para inserir uma opção não disponível no select, podemos usar o controle datalist como no exemplo abaixo.
+                -->                
+            </select>
+        </p>
+        <hr>
+        <h3>Datalist</h3>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Escolha:">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+            <!--
+                Para que a opção de datalist funcione, devemos criar um input de texto, informar o mesmo id do label, determinar um id diferente para a tag datalist e, no input, inserir o atributo list="" contendo o id informado na tag datalist. Se não quisermos mostrar os códigos como no exemplo, podemos retirar o value="". Podemos fazer optgroup dentro de datalists, tal qual no select.
+                Podemos utilizar placeholder para legenda do campo no input.
+            -->
+        </p>
+        <hr>
+
+        <h3>Textarea</h3>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite aqui a sua mensagem:"></textarea>
+
+            <!--
+                Para textarea, devemos usar o método post na tag form.
+                Na label, infomrmaremos o id que utilizamos na tag textarea.
+                Em textarea informaremos o número de colunas e linhas. Isso definirá o tamanho padrão da caixa de texto, más ela pode ser ajustada pelo usuário, puxando pelo canto inferior direito.
+                Podemos usar placeholder para legenda da caixa.
+            -->
+        </p>
+        <hr>
+
+        
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>
