@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%235f6368">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <span class="material-symbols-outlined">menu</span>
-        <menu>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,4 +29,15 @@
             <p>Possimus, saepe cupiditate error vel aliquam culpa facilis odio architecto aspernatur officia obcaecati repellat molestias distinctio magnam consectetur enim delectus natus deserunt ut tempora? Provident amet possimus culpa qui similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima adipisci vitae aspernatur iste mollitia voluptate quisquam odio, excepturi nihil amet. Non beatae aut delectus et quidem. Dicta, accusamus nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem non eos amet ullam repudiandae? Delectus cupiditate nobis voluptatibus ea eaque explicabo error. Officia inventore ex, porro consectetur magnam obcaecati?</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
