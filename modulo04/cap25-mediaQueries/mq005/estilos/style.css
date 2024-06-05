@@ -55,7 +55,6 @@ menu > ul > li > a {
 menu > ul > li > a:hover {
     background-color: grey;
     color: black;
-    font-weight: bold;
 }
 
 main {
