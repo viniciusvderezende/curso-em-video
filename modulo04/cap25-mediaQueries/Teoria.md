@@ -127,3 +127,16 @@ Ao priorizarmos os dispositivos móveis, ganhamos em:
 - Performance: Sites para celulares precisam ser bem leves para não prejudicar a experiência do cliente.
 
 Feito o design mobile first, teremos mais liberdade para inserir novas features e complementar a página para dispositivos maiores.
+
+# Typical Device Breakpoints
+
+Quando criamos a media queries, precisamos definir o tamanho das telas onde o conteúdo será exibido.  
+Como a qualidade e tecnologia das telas mudaram no decorrer do tempo, é importante pesquisar os tamanhos e resoluções utilizados pelo mercado para ser mais assertivo ao configurar as medias queries. O site mais adequado para essa pesquisa é o site do <a href="https://www.w3.org/" target="_blank">W3C</a>, que é o consórcio que trata dos padrões de desenvolvimento para HTML e CSS.
+Os dispositivos a serem pesquisados são:
+
+- Pequenas telas - até 600px;
+- Celular - de 600px até 768px;
+- Tablet - 769px até 992px;
+- Desktop - 993px até 1200px;
+- Grandes telas - acima de 1200px;
+Apesar dessas medidas, é interessante atualizá-las de acordo com o site do W3C.
