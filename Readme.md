@@ -7,7 +7,7 @@ Aqui publicarei os exercícios e projetos feitos nas aulas.
 
 <a href="https://viniciusvderezende.github.io/projeto/projeto-cordel" target="_blank">Executar o projeto Cordel Moderno</a>
 
-<a href="https://viniciusvderezende.github.io/redes-sociais" target="_blank">Executar o projeto Redes Sociais</a>
+<a href="https://viniciusvderezende.github.io/projeto-redes-sociais" target="_blank">Executar o projeto Redes Sociais</a>
 
 <a href="https://viniciusvderezende.github.io/curso-em-video/modulo04/cap25-mediaQueries/mq004" target="_blank">Executar o projeto de Teste de Media Queries</a>
 
