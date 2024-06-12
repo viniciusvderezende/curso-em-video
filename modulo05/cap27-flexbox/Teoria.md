@@ -21,3 +21,36 @@ Dessa forma, os elementos filho serão deslocados ou moldados de acordo com o ti
 É importante salientar que, apenas o elemento pai recebe a configuração de display flex. Os elementos filho receberão outras configurações.
 
 Denominamos os elementos pai como _**flex-contêiner** e os elementos filho, chamamos de _**flex-items**_._
+
+## Direções e eixos em flexbox
+
+### Flex-direction
+
+A propriedade flex-direction receberá alguns atributos para a orientação do posicionamento dos elementos-filho, pois flex direction será declarado no elemento-pai. São esses atributos:
+
+- row;
+- row-reverse.
+- column.
+- column-revere.
+
+#### Row:
+
+A configuração padrão do flex-direction é row, portanto, se não declararmos nada, o conteúdo permanecerá em linha, orietado da esquerda para direita.
+
+#### Curiosidade
+Nas linguas em que o sentido da leitura é da direita para esquerda, como o árabe, por exemplo, o flex-direction será da direita para a esquerda.
+
+#### Row-reverse: 
+Podemos declarar o sentido inverso do flex-direction row. Para isso, utilizaremos a propriedade row-reverse. Dessa forma, a orientação será da direita para a esquerda.
+
+#### Column: 
+
+Para posicionarmos os itens em formato vertical, utilizaremos a propriedade column.
+
+#### Column-reverse:
+
+Tal qual a o atributo row reverse, o column-reverse posicionará os itens na vertical, orientados de baixo para cima.
+
+### Eixos
+
+A orientação do conteúdo é disposta na horizontal ou na vertical
