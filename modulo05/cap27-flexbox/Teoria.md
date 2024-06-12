@@ -51,6 +51,17 @@ Para posicionarmos os itens em formato vertical, utilizaremos a propriedade colu
 
 Tal qual a o atributo row reverse, o column-reverse posicionará os itens na vertical, orientados de baixo para cima.
 
-### Eixos
+### Eixos (axis)
 
-A orientação do conteúdo é disposta na horizontal ou na vertical
+A orientação do conteúdo é disposta na horizontal ou na vertical é composta pelos eixos X e Y, sendo o eixo X o orientador da horizontal e, o eixo Y, da vertical.
+
+Ao iniciarmos a propriedade flex-direction: row, criaremos o eixo principal (main-axis) que é o eixo horizontal. Todo eixo é composto por dois pontos: o inicial (main-start) e o final (main-end), da esquerda para direita.
+O outro eixo criado é o eixo vertical, o cross-axis, que também é composto pelo cross-start e cross-end, de cima para baixo.
+
+Vale ressaltar que, quando o atributo for acompanhado do reverse, o start e end também se invertem. Ex.:
+
+row-reverse: o start para a partir da direita.
+
+Se declararmos o flex-direction como column, teremos o main-axis de cima para baixo e o cross-axis, da esquerda para a direita. Seguimos o mesmo padrão relatado no row-reverse se declararmos o column-reverse.
+
+Em todos os casos, quando novos itens forem adicionados ou deslocados, isso ocorrerá do start para o end.
