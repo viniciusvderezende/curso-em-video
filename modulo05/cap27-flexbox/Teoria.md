@@ -65,3 +65,18 @@ row-reverse: o start para a partir da direita.
 Se declararmos o flex-direction como column, teremos o main-axis de cima para baixo e o cross-axis, da esquerda para a direita. Seguimos o mesmo padrão relatado no row-reverse se declararmos o column-reverse.
 
 Em todos os casos, quando novos itens forem adicionados ou deslocados, isso ocorrerá do start para o end.
+
+### Flex-wrap
+
+O padrão da propriedade é nowrap, ou seja, não vai deslocar o conteúdo quando houver a diminuição do elemento-pai.  
+Assim, reduzindo a tela, o conteúdo será reduzido, ou "espremido".  
+Vale ressaltar que, o tamanho do bloco, dependerá do conteúdo exitente nele.  
+Ao inserirmos flex-wrap no elemento-pai, os elementos filhos já estarão configurados como now-rap, não havendo necessidade de declarar esse atributo nos elementos-filho.
+
+#### Wrap:  
+
+Essa propriedade desloca o último elemento-filho no cross-axis, ou seja, no eixo transversal. Se a direction estiver como padrão (da esquerda para a direita), o último elemento será direcionado para baixo, quando o elemento pai for reduzido.
+
+#### Wrap-reverse:
+
+Quando o conteúdo for reduzido, o último elemento será deslocado no sentido oposto do cross-axis, ou seja, será deslocado para cima, se a direction estiver padrão.
