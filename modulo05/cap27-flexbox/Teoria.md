@@ -80,3 +80,4 @@ Essa propriedade desloca o último elemento-filho no cross-axis, ou seja, no eix
 #### Wrap-reverse:
 
 Quando o conteúdo for reduzido, o último elemento será deslocado no sentido oposto do cross-axis, ou seja, será deslocado para cima, se a direction estiver padrão.
+
