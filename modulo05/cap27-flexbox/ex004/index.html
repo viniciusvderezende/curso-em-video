@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex; /* Torna o elemento-pai ajustável. */
+            /* flex-direction: row; 
+            flex-wrap: nowrap;
+            Esses são os atributos padrão do display flex */
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap; /* Desloca o último item no coross-axis, ou para baixo. */
+
+            /* No lugar de delcararmos tudo o que exemplificamos acima, podemos usar um shorthand declarando a flex-direction + o flex-wrap, inserindo o flex-flow: row nowrap.*/
+            height: 500px;
+            flex-flow: row-reverse nowrap;
+            justify-content: flex-start;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de cloco A</div>
+        <div class="item">Exemplo de cloco B</div>
+        <div class="item">Exemplo de cloco C</div>
+        <div class="item">Exemplo de cloco D</div>
+        <div class="item">Exemplo de cloco E</div>
+        <div class="item">Exemplo de cloco F</div>
+        <div class="item">Exemplo de cloco G</div>
+    </div>
+</body>
+</html>

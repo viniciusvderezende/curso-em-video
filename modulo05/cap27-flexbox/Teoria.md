@@ -81,3 +81,37 @@ Essa propriedade desloca o último elemento-filho no cross-axis, ou seja, no eix
 
 Quando o conteúdo for reduzido, o último elemento será deslocado no sentido oposto do cross-axis, ou seja, será deslocado para cima, se a direction estiver padrão.
 
+## Alinhamento nos eixos  
+
+### Justify-content
+
+Proporciona o alinhamento dos itens de acordo com o eixo principal. 
+
+#### Main-start e main-end:
+
+Início e fim do eixo principal respectivamente.
+
+### Propriedades do justify-content
+
+#### felx-start:  
+Por padrão, o justify-content mantém os itens no início do eixo, ou de acordo com a configuração do flex-direction, no sentido inverso.
+
+#### felx-end:  
+Posiciona os itens no final do eixo, ou de acordo com a configuração do flex-direction, no sentido inverso.
+
+#### center:  
+Centraliza os itens dentro do elemento-pai e distribui os espaços em branco igualmente no flex-start e flex-end.
+
+#### space-between:  
+Posiciona os itens ocupando a totalidade do elemento-pai, mantendo o primeiro elemento no start e o último, no end, distribuindo os espaços em branco igualmente no centro do container.
+
+#### space-evenly:  
+Posiciona os itens de forma a manter espaços iguais entre os elementos.
+
+#### space-around:  
+Divide o container de acordo com o número de itens presentes nele e posiciona esses itens centralizados dentro das divisões criadas.
+
+### Alinhamento no cross-axis
+
+#### align-items:  
+Alinha os itens no cross-axis no início do container. Ex.: Se o flex-directiona estiver como row, os itens serão posicionados na vertical, e se o flex-direction estiver como column, align-items posicionará os itens na horizontal.
