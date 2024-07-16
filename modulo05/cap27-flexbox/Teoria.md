@@ -68,7 +68,7 @@ Em todos os casos, quando novos itens forem adicionados ou deslocados, isso ocor
 
 ### Flex-wrap
 
-O padrão da propriedade é nowrap, ou seja, não vai deslocar o conteúdo quando houver a diminuição do elemento-pai.  
+O padrão da propriedade é nowrap, ou seja, não vai deslocar o conteúdo quando houver a diminuição do elemento-pai (não vai quebrar linha).  
 Assim, reduzindo a tela, o conteúdo será reduzido, ou "espremido".  
 Vale ressaltar que, o tamanho do bloco, dependerá do conteúdo exitente nele.  
 Ao inserirmos flex-wrap no elemento-pai, os elementos filhos já estarão configurados como now-rap, não havendo necessidade de declarar esse atributo nos elementos-filho.
@@ -93,10 +93,10 @@ Início e fim do eixo principal respectivamente.
 
 ### Propriedades do justify-content
 
-#### felx-start:  
+#### flex-start:  
 Por padrão, o justify-content mantém os itens no início do eixo, ou de acordo com a configuração do flex-direction, no sentido inverso.
 
-#### felx-end:  
+#### flex-end:  
 Posiciona os itens no final do eixo, ou de acordo com a configuração do flex-direction, no sentido inverso.
 
 #### center:  
@@ -115,3 +115,7 @@ Divide o container de acordo com o número de itens presentes nele e posiciona e
 
 #### align-items:  
 Alinha os itens no cross-axis no início do container. Ex.: Se o flex-directiona estiver como row, os itens serão posicionados na vertical, e se o flex-direction estiver como column, align-items posicionará os itens na horizontal.
+
+### Centralização de itens
+
+Para centralizar itens no container, utilizamos as propriedades justify-content e align-items com o valor center.
