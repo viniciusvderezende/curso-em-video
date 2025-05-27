@@ -11,8 +11,8 @@ print(frase[9::3]) # A ausência de números entre "::" significa que não estam
 print(len(frase)) # Len vem de length (comprimento) da frase, ou seja, conta os espaços ocupados pelos caracteres e espaços entre eles.
 print(frase.count('o')) # Count conta quantas vezes uma letra é exibida na frase.
 print(frase.count('o', 0, 13)) # Count conta quantas vezes uma letra é exibida na frase e os números, mostram onde começa a contagem e até onde vai.
-print(frase.find('deo')) # Find localiza determinado conjunto de caracteres e retorna sua posição na cadeia de caracteres. Caso não exitam, retornará o valor -1.
-print('Curso' in frase) # In retorna Treu ou False se a cadeia de caracteres existir ou não em determinado conjuntos de letras.
+print(frase.find('deo')) # Find localiza determinado conjunto de caracteres e retorna sua posição na cadeia de caracteres. Caso não existam, retornará o valor -1.
+print('Curso' in frase) # In retorna True ou False se a cadeia de caracteres existir ou não em determinado conjuntos de letras.
 
 # Módulos de transformação de strings
 
@@ -28,6 +28,8 @@ print(frase.lstrip()) # Lstrip remove os espaços somente à esquerda da frase.
 # Módulos de divisão de strings
 
 print(frase.split()) # Split localiza os espaços entre as palavras e cria uma lista onde cada palavra passa a ser um elemento independente. Ex: Curso em Vídeo Python passará a ser ['Curso', 'em', 'Vídeo', 'Python'].
+dividido = frase.split()
+print(dividido[2][3]) # Estamos pegando o segundo item da lista e mostrando o terceiro caractere dele, ou seja, a palavra 'Vídeo' e a letra 'e'.
 
 # Módulos de junção de strings
 frase = frase.split()
