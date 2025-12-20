@@ -1,5 +1,3 @@
-
-
 numero = int(input('Digite um número inteiro para ver sua conversão: '))
 base = int(input('''Escolha a opção para conversão:
 [1] - Binário
